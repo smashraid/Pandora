@@ -1,0 +1,37 @@
+{
+  "name": "pandora",
+  "version": "1.0.0",
+  "description": "bot framework",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/tsc && node build/main.js",
+    "postinstall": "typings install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smashraid/Pandora.git"
+  },
+  "keywords": [
+    "bot"
+  ],
+  "author": "Saulo Tsuchida Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smashraid/Pandora/issues"
+  },
+  "homepage": "https://github.com/smashraid/Pandora#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "debug": "^2.6.3",
+    "express": "^4.15.2",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.0",
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  }
+}
