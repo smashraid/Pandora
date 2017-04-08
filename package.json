@@ -2,6 +2,9 @@
   "name": "pandora",
   "version": "1.0.0",
   "description": "bot framework",
+  "engines": {
+    "node": "7.7.2"
+  },
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/tsc && node build/main.js",
