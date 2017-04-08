@@ -29,6 +29,8 @@
   },
   "homepage": "https://github.com/smashraid/Pandora#readme",
   "dependencies": {
+    "typescript": "^2.2.2",
+    "typings": "^2.1.0",
     "body-parser": "^1.17.1",
     "debug": "^2.6.3",
     "express": "^4.15.2",
@@ -36,8 +38,6 @@
   },
   "devDependencies": {
     "ts-loader": "^2.0.3",
-    "typescript": "^2.2.2",
-    "typings": "^2.1.0",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
   }
