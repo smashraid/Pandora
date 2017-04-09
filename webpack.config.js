@@ -3,7 +3,7 @@
 const config = {
     entry: "./main",
     output: {
-        filename: "app.js"
+        filename: "main.js"
     },
     module: {
         rules: [
