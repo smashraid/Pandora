@@ -1,7 +1,7 @@
 import * as http from 'http';
 import * as debug from 'debug';
 
-import app from './App';
+import app from './app';
 
 debug('pandora:server');
 
