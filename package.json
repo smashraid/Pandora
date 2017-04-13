@@ -5,7 +5,7 @@
   "engines": {
     "node": "7.7.2",
     "npm": "4.1.2",
-    "typings" : "2.1.0"
+    "typings": "2.1.0"
   },
   "main": "index.js",
   "scripts": {
@@ -29,14 +29,15 @@
   },
   "homepage": "https://github.com/smashraid/Pandora#readme",
   "dependencies": {
-    "typescript": "^2.2.2",    
-    "typings": "^2.1.0",
     "body-parser": "^1.17.1",
     "debug": "^2.6.3",
     "express": "^4.15.2",
-    "morgan": "^1.8.1"
+    "morgan": "^1.8.1",
+    "request": "^2.81.0",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.0"
   },
-  "devDependencies": {    
+  "devDependencies": {
     "ts-loader": "^2.0.3",
     "webpack": "^2.3.3",
     "webpack-dev-server": "^2.4.2"
