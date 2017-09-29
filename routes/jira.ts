@@ -2,6 +2,35 @@
 import { Router, Request, Response } from 'express';
 import { JiraController } from "../controllers/jira";
 
+import * as fs from "fs";
+import * as readline from "readline";
+import * as path from "path";
+
+const pp: string = path.join(__dirname, 'data.txt');
+const aa: string = path.resolve('..\\data.txt');
+const options: readline.ReadLineOptions = {
+    input: fs.createReadStream(pp)
+};
+const rl: readline.ReadLine = readline.createInterface(options);
+
+const dpto = [];
+
+rl.on('line', (line: string) => {
+    console.log(`Line from file: ${line}`);
+    let d: Array<string> = line.split('/').filter((el) => { return el.trim().length != 0 && el != undefined });
+    dpto.push(addNode(d));
+    console.log(dpto);
+});
+
+let addNode = (text: string[]): void => {
+    for (var i = 0; i < text.length; i++) {
+        let n = dpto.indexOf(text[i].trim());
+        if (n == -1) {
+            dpto.push(text[i].trim());
+        }
+    }
+}
+
 // Assign router to the express.Router() instance
 const router: Router = Router();
 const jira = new JiraController();
